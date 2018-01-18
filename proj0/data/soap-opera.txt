@@ -1,0 +1,18 @@
+4
+3.00e11
+ 0.000e00  1.1547e11 -3.6524e4  0.0000   3.300e30  sun.gif
+ 1.000e11 -5.7735e10  1.8262e4  3.1631e4 3.300e30  mars.gif
+-1.000e11 -5.7735e10  1.8262e4 -3.1631e4 3.300e30  venus.gif
+-2.500e11  0.0000e00  0.000e00  6.000e04 3.302e20  mercury.gif
+
+Creator of universe: Katie Smith, COS 126, Spring 2004
+
+The story: Everyone knows about the love triangle involving Mars, Sun, and Venus, for both
+Mars and Sun are in love with the beautiful Venus.  Mercury secretly loves Venus as well,
+but does not dare to get involved with anything that would anger Sun, a powerful
+politician, or Mars, a dangerous gang leader.  Sun loses interest in Venus, and it looks
+for a while that Mars and Venus will be married.  Mercury, nearly hopeless, drifts off
+alone.  But when Mars proposes to Venus, she realizes that she does not love him, and
+finds a clever way to convince him that he does not want her, so they part ways very
+quickly.  Venus now thinks she is alone, but Mercury is there to follow, and pursue his
+love...

@@ -1,0 +1,64 @@
+50                    
+7.00E+11                    
+ 0.000e00   0.000e00   0.000e00   0.000e00  1.9890e30  sun.gif
+ 8.500e11   4.000e11  -0.900e04  -0.500e04  1.9990e30  blackhole.gif
+ 5.790e10   0.000e00   0.000e00   4.790e04  3.3020e23  mercury.gif
+ 1.082e11   0.000e00   0.000e00   3.500e04  4.8690e24  venus.gif
+ 1.496e11   0.000e00   0.000e00   2.980e04  5.9740e24  earth.gif
+ 2.279e11   0.000e00   0.000e00   2.410e04  6.4190e23  mars.gif
+ 7.783e11   0.000e00   0.000e00   1.307e04  1.8986e27  jupiter.gif
+
+-2.58E+11  -2.33E+11   1.31E+04  -1.45E+04  7.000E+12  asteroid.gif
+ 3.38E+11   7.31E+10  -4.12E+03   1.90E+04  8.390E+12  asteroid.gif
+-3.19E+11   1.39E+11  -7.80E+03  -1.79E+04  7.430E+12  asteroid.gif
+ 1.87E+11   2.93E+11  -1.64E+04   1.05E+04  3.310E+12  asteroid.gif
+-7.13E+10  -3.40E+11   1.91E+04  -4.00E+03  9.970E+12  asteroid.gif
+ 3.33E+11   7.59E+10  -4.33E+03   1.90E+04  1.690E+12  asteroid.gif
+-1.63E+11  -3.03E+11   1.72E+04  -9.22E+03  1.100E+12  asteroid.gif
+-7.32E+09   3.47E+11  -1.95E+04  -4.12E+02  6.350E+12  asteroid.gif
+-9.53E+10  -3.31E+11   1.87E+04  -5.39E+03  5.240E+12  asteroid.gif
+-3.48E+11  -3.91E+10   2.18E+03  -1.94E+04  3.600E+12  asteroid.gif
+-6.54E+09  -3.45E+11   1.95E+04  -3.70E+02  7.430E+11  asteroid.gif
+-1.41E+11   3.14E+11  -1.78E+04  -7.99E+03  2.570E+12  asteroid.gif
+ 1.50E+11  -3.15E+11   1.76E+04   8.37E+03  3.890E+12  asteroid.gif
+ 2.95E+11  -1.82E+11   1.02E+04   1.66E+04  1.850E+12  asteroid.gif
+-1.44E+11  -3.17E+11   1.78E+04  -8.05E+03  7.340E+12  asteroid.gif
+-2.18E+10   3.43E+11  -1.95E+04  -1.24E+03  7.160E+11  asteroid.gif
+-3.31E+11   1.05E+11  -5.89E+03  -1.86E+04  1.840E+12  asteroid.gif
+-4.34E+09  -3.49E+11   1.95E+04  -2.42E+02  6.290E+12  asteroid.gif
+ 8.70E+10   3.36E+11  -1.89E+04   4.89E+03  5.840E+12  asteroid.gif
+-2.50E+11   2.40E+11  -1.35E+04  -1.41E+04  3.310E+12  asteroid.gif
+ 1.91E+11  -2.86E+11   1.62E+04   1.08E+04  4.820E+12  asteroid.gif
+ 2.53E+11  -2.34E+11   1.32E+04   1.43E+04  7.250E+12  asteroid.gif
+ 5.00E+10   3.40E+11  -1.93E+04   2.83E+03  5.270E+12  asteroid.gif
+ 1.52E+11   3.14E+11  -1.75E+04   8.50E+03  5.630E+12  asteroid.gif
+-1.63E+11  -3.05E+11   1.72E+04  -9.18E+03  9.660E+12  asteroid.gif
+-3.17E+11  -1.48E+11   8.25E+03  -1.77E+04  3.290E+12  asteroid.gif
+ 3.63E+10   3.47E+11  -1.94E+04   2.03E+03  4.840E+12  asteroid.gif
+ 2.97E+11  -1.81E+11   1.02E+04   1.66E+04  8.290E+12  asteroid.gif
+-3.47E+11  -7.09E+09   3.98E+02  -1.95E+04  5.240E+12  asteroid.gif
+ 3.13E+11   1.56E+11  -8.69E+03   1.74E+04  2.380E+12  asteroid.gif
+-3.26E+11   1.09E+11  -6.19E+03  -1.85E+04  4.420E+11  asteroid.gif
+ 2.52E+11  -2.32E+11   1.32E+04   1.43E+04  3.890E+11  asteroid.gif
+ 4.07E+10   3.44E+11  -1.94E+04   2.29E+03  9.980E+12  asteroid.gif
+ 3.60E+10   3.47E+11  -1.94E+04   2.01E+03  9.950E+12  asteroid.gif
+ 2.61E+11  -2.32E+11   1.29E+04   1.46E+04  2.470E+12  asteroid.gif
+-3.44E+11   1.07E+10  -6.04E+02  -1.95E+04  8.260E+12  asteroid.gif
+ 3.06E+11  -1.64E+11   9.22E+03   1.72E+04  3.530E+12  asteroid.gif
+ 1.91E+11  -2.90E+11   1.63E+04   1.07E+04  7.440E+12  asteroid.gif
+ 3.04E+11   1.60E+11  -9.08E+03   1.72E+04  4.640E+12  asteroid.gif
+ 2.15E+11   2.71E+11  -1.53E+04   1.21E+04  9.480E+12  asteroid.gif
+ 3.41E+10   3.43E+11  -1.94E+04   1.92E+03  7.660E+11  asteroid.gif
+-2.84E+11  -2.02E+11   1.13E+04  -1.59E+04  5.630E+12  asteroid.gif
+-3.22E+11   1.26E+11  -7.08E+03  -1.82E+04  6.760E+12  asteroid.gif
+ 3.39E+11   8.17E+10  -4.56E+03   1.89E+04  1.760E+12  asteroid.gif
+-1.97E+11  -2.82E+11   1.60E+04  -1.12E+04  4.020E+12  asteroid.gif
+
+Creator of universe: Dzhelil Rufat, COS 126, Spring 2004
+
+This file can be used to simulate the entrance of a black hole into
+the Solar System. Special effects can be observed such as the deformation of
+the asteroid field, the swing shot effect of Jupiter around the
+black hole and a collision between Jupiter and the Sun. Earth survives the
+entrance of the black hole but its orbit becomes extrememly eccentric.
+

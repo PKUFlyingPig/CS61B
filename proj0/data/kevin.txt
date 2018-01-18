@@ -1,0 +1,19 @@
+9
+2.5e11
+ 0.0e00    0.000e00   0.00e00   0.00e00   2e32 kevin.gif
+ 6.25e10   0.000e00   0.00e00   5.66e05   6e24 mercury.gif
+-6.25e10   0.000e00   0.00e00  -5.66e05   6e24 earth.gif
+ 0         6.250e10  -5.66e05   0.00e00   6e24 mars.gif
+ 0        -6.250e10   5.66e05   0.00e00   6e24 venus.gif
+ 1.414e11  1.414e11   1.20e05  -1.20e05   2e24 sun.gif
+-1.414e11  1.414e11   1.20e05   1.20e05   2e24 sun.gif
+ 1.414e11 -1.414e11  -1.20e05  -1.20e05   2e24 sun.gif
+-1.414e11 -1.414e11  -1.20e05   1.20e05   2e24 sun.gif
+
+Creator of the universe: Alex Kandabarow
+
+Kevin Wayne is the center of the solar system. There are 8 planets, 4 rotating
+in elliptical orbits in one direction, and 4 others rotating in a different
+direction with even more elliptical orbits. I used the formulas
+V(orb)=sqrt(G*mass(sun)/r) and V(esc)=sqrt(2*G*mass(sun)/r) and found a value in
+between to create an elliptical orbit.

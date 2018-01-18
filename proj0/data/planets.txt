@@ -1,0 +1,10 @@
+5
+2.50e+11
+ 1.4960e+11  0.0000e+00  0.0000e+00  2.9800e+04  5.9740e+24    earth.gif
+ 2.2790e+11  0.0000e+00  0.0000e+00  2.4100e+04  6.4190e+23     mars.gif
+ 5.7900e+10  0.0000e+00  0.0000e+00  4.7900e+04  3.3020e+23  mercury.gif
+ 0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  1.9890e+30      sun.gif
+ 1.0820e+11  0.0000e+00  0.0000e+00  3.5000e+04  4.8690e+24    venus.gif
+[!] Your program should not read this line, as all 5 planets were already listed
+and there is no further information to be specified. So you can put comments here.
+This file contains the inner 4 planets of our solar system, and the sun.

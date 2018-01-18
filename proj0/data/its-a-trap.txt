@@ -1,0 +1,20 @@
+7
+2.50e11
+0.0e00 -1.75e11 2.5e04 0.0e00 5.974e24 death_star.gif
+0.000e00 0.000e00 0.000e00 0.000e00 1.989e30 endor.gif
+-1.496e11 1.496e11 3.0e03 -2.60e04  5.974e23 rebel_cruiser.gif
+1.0e12 0.000e00 -7.000e04 0.000e00 1.989e3 its_a_trap.gif
+1.2e11 -1.25e12 0.00e00 7.000e04 1.989e3 star_destroyer.gif
+1.6e11 -1.2e12 0.00e00 7.000e04 1.989e3 star_destroyer.gif
+2.0e11 -1.25e12 0.00e00 7.000e04 1.989e3 star_destroyer.gif
+
+
+Creator of universe: Jim Valcourt, COS 126, Fall 2008
+
+ My universe recreates the rebel alliance's attack on the second Death
+ Star from Return of the Jedi.  First, the rebel cruiser rounds Endor
+ to attack the Death Star.  When the cruiser pulls within attacking
+ range, it becomes clear that the shield is not down.  Han had failed
+ them.  "It's a trap!" the good admiral exclaims, and the rebels beat 
+ a hasty retreat with star destroyers hot on their heels.
+

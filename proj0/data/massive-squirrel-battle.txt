@@ -1,0 +1,183 @@
+143
+6.00e12
+5.5e12 3.75e12 0.000e00 -1.000e02 1.989e35 ninjasquirrel_red.gif
+-5.5e12 -3.75e12 0.000e00 1.000e02 1.989e35 squirrel.gif
+
+5.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+6.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+7.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+8.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+9.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+10.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+11.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+4.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+3.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+2.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+1.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+0.0e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+0.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+-0.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-1.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-2.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-3.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-4.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-5.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-6.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-7.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-8.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-9.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-10.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-11.0e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+5.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+6.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+7.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+8.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+9.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+10.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+11.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+4.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+3.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+2.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+1.5e12 0.000e00 1.000e05 4.737e04 1.314e17 acorn3.gif
+-1.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-2.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-3.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-4.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-5.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-6.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-7.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-8.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-9.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-10.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-11.5e12 0.000e00 1.000e05 4.737e04 -1.314e17 acorn3.gif
+
+5.0e12 1.0e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+6.0e12 1.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+7.0e12 1.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+8.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+9.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+10.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+11.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+4.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+3.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+2.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+1.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+0.0e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+0.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+-0.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-1.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn-1.gif
+-2.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-3.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-4.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-5.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-6.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-7.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-8.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-9.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-10.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-11.0e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+5.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+6.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+7.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+8.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+9.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+10.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+11.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+4.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+3.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+2.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+1.5e12 01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+-1.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-2.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-3.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-4.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-5.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-6.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-7.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-8.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-9.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-10.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-11.5e12 01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+
+5.0e12 -1.0e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+6.0e12 -1.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+7.0e12 -1.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+8.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+9.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+10.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+11.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+4.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+3.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+2.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+1.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+0.0e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+0.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+-0.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-1.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-2.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-3.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-4.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-5.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-6.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-7.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-8.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-9.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-10.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-11.0e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+5.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+6.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+7.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+8.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+9.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+10.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+11.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+4.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+3.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+2.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+1.5e12 -01.000e12 1.000e05 4.737e04 1.314e17 acorn3.gif
+-1.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-2.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-3.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-4.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-5.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-6.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-7.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-8.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-9.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-10.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+-11.5e12 -01.000e12 1.000e05 4.737e04 -1.314e17 acorn3.gif
+
+Creator of universe: Christina Ilvento, COS 126, Fall 2006
+
+The Universe which I have created is called massivesquirrelbattle. In this
+universe, the epic tale of how the Red Ninja Squirrels came to be bitter 
+rivals with the Unassuming Grey Squirrels unfolds:
+
+One day, the Red Ninja Squirrel and the Unassuming Grey Squirrel were 
+foraging through the plethora of acorns available in their universe. After 
+much foraging and sorting, though, neither squirrel found an acorn he felt 
+truly worthy of consumption. The plethora had made them gluttonous and picky. 
+Then, at the same moment, they both saw THE ONE ACORN, whose green and gold 
+glow held such sway over them, that they began to gravitate towards it. But 
+just as each approached THE ONE ACORN, they saw each other! Each squirrel was 
+determined to have THE ONE ACORN for his own, and so they battled. However, 
+THE ONE ACORN in its great wisdom, drifted away during the battle, sensing 
+that neither of the greedy squirrels was fit to devour it. After noticing THE 
+ONE ACORN's departure, the two squirrels sprang apart, never to forage in the 
+same universe again. THE END.
+
+This universe was inspired by the squirrel battles that I have witnessed on 
+campus. They are brief encounters after which both squirrels run their 
+separate ways. I initially made a universe in which many acorns orbited 
+around one squirrel, but it seemed cruel to always leave the acorns just 
+out of reach. Then I began experimenting with two-squirrel systems, and 
+decided that having the squirrels battle over an acorn would be a challenging 
+problem worth simulating. The pictures of the squirrels and acorns were 
+procured from: 
+
+www.pixeljoint.com
+dgeorgi.math.hr/forum/images/smiles
+www.nbbd.com/godo/ef/events
+www.squirrel.com
+
+

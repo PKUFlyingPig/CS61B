@@ -1,0 +1,8 @@
+3
+1.25e11
+0.000e00 0.000e00 0.0500e04 0.000e00  5.974e24 earth.gif
+0.000e00 4.500e10 3.000e04 0.000e00   1.989e30 sun.gif
+0.000e00 -4.500e10 -3.000e04 0.000e00 1.989e30 sun.gif
+[!] Your program should not read this line, as all 3 planets were already listed
+and there is no further information to be specified. So you can put comments here.
+This file contains an interesting 3-body system.

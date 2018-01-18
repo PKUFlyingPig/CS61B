@@ -1,0 +1,66 @@
+16
+2.50e11
+ 1.000e11  0.000e00  0.000e00  -2.52664e05 1.000e32 earth.gif
+-1.000e11  0.000e00  0.000e00   2.52664e05 1.000e32 mars.gif
+ 0.000e00  1.000e11  2.52664e05 0.000e00   1.000e32 mercury.gif
+ 0.000e00 -1.000e11 -2.52664e05 0.000e00   1.000e32 venus.gif
+ 1.000e07  0.000e00  0.000e00   0.000e00   1.000e01 sun.gif
+ 0.000e00  1.000e07  0.000e00   0.000e00   1.000e01 sun.gif
+-1.000e07  0.000e00  0.000e00   0.000e00   1.000e01 sun.gif
+ 0.000e00 -1.000e07  0.000e00   0.000e00   1.000e01 sun.gif
+ 1.000e13  1.000e13 -1.000e06  -1.000e06   2.000e32 blackhole.gif
+ 1.000e13 -1.000e13 -1.000e06   1.000e06   2.000e32 blackhole.gif
+-1.000e13  1.000e13  1.000e06  -1.000e06   2.000e32 blackhole.gif
+-1.000e13 -1.000e13  1.000e06   1.000e06   2.000e32 blackhole.gif
+ 0.000e00  1.414e13  0.000e00  -1.414e06   2.000e22 blackhole.gif
+ 0.000e00 -1.414e13  0.000e00   1.414e06   2.000e22 blackhole.gif
+-1.414e13  0.000e00  1.414e06   0.000e00   2.000e22 blackhole.gif
+ 1.414e13  0.000e00 -1.414e06   0.000e00   2.000e22 blackhole.gif
+
+
+// This is a good test case for seeing if the positions are being updated
+// properly.
+// If there is one big force loop (i.e., program updates position
+// before computing all the new forces) the bodies will fly off 
+// very quickly.
+// If everything is correct, the scenario will play out (four suns
+// emerge from center, suns and planets dance around until suns exit,
+// planets dance a bit more until black holes come and everyone
+// flies off the screen).
+
+Michael Gelbart Fall 06:
+
+This universe is a bit of an optical illusion at first. It starts out with
+4 planets supposedly orbiting the sun, but they are actually just orbiting
+around their common center of mass, located exactly where the "sun" is. To
+determine these orbits I calculated what velocities they must have based on
+the radius of orbit and their masses. I did this by equating centripetal
+force to the total gravitational force (the sum of all the "inward-pulling"
+components of the forces from the other 3 planets - the perpendicular
+components cancel out).
+
+After a short amount of time, the sun "splits" into four, as there are
+actually 4 suns on top of each other, each one with a small initial velocity
+in a different direction. These "suns" are all set to negligible mass (10 kg)
+so that they do not apply any significant gravitational force on each other
+or on the planets (if they were heavy they would all immediately fly out
+at the beginning). However, because we know a = F/m and F is proportional to 
+mass, the acceleration (which then defines velocity and position) is
+independent of the mass of the suns and therefore they are affected by the
+gravitational pull of other planets as if they were very heavy.
+
+Another interesting thing about this universe is the behaviour of the 4 suns
+after they leave the center of the planetary orbits. Each one flies outward,
+circles around a planet, comes back into the middle, and pauses for a short 
+time. This process repeats a few times until finally the suns fly out of the
+screen. The entire behaviour just described is very interesting to observe,
+and, at least to me, is not at all what I would have expected. The pause 
+is especially counter-intuitive as one would think it would require very
+precise conditions.
+
+Shortly after the suns depart, eight black holes (which are not really 
+black holes as they actually have masses equal to the that of the planets)
+fly through the screen at a high speed (they start very far away),
+causing the planets to pull inward and then fly out towards the corners.
+In conclusion, the main point of interest in the universe is the initial
+optical illusion, but the rest of it looks quite neat, too.

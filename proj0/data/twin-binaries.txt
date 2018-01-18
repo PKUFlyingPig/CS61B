@@ -1,0 +1,9 @@
+4
+ 5.000e10
+-3.500e10 0.000e09 0.000e00  1.400e03 3.000e28 mercury.gif
+-1.000e10 0.000e09 0.000e00  1.400e04 3.000e28 venus.gif
+ 1.000e10 0.000e09 0.000e00 -1.400e04 3.000e28 earth.gif
+ 3.500e10 0.000e09 0.000e00 -1.400e03 3.000e28 mars.gif
+
+Creator of universe: David Costanzo, COS 126, Fall 2003
+ 

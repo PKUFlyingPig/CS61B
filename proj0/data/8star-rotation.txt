@@ -1,0 +1,13 @@
+8
+22e10
+
+6.85e10 0 0 39e3 5e29 pluto.gif
+8.125e10 0 0 -31e3 5e29 pluto.gif
+11.875e10 0 0 -11e3 5e29 pluto.gif
+13.125e10 0 0 -81e3 5e29 pluto.gif
+-6.85e10 0 0 -39e3 5e29 pluto.gif
+-8.125e10 0 0 31e3 5e29 pluto.gif
+-11.875e10 0 0 11e3 5e29 pluto.gif
+-13.125e10 0 0 81e3 5e29 pluto.gif
+
+Creator of the universe:  Eric Schlossberg

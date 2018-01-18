@@ -1,0 +1,10 @@
+3
+2.50e+11
+ -1.5000e+11  0.0000e+00  0.0000e+00  0.0000e+00  8.0000e+30  sun.gif
+  1.5000e+11  0.0000e+00  0.0000e+00  0.0000e+00  8.0000e+30  sun.gif
+  0.0000e+11  0.0000e+00  0.0000e+00  0.0000e+00 -2.0000e+30  uranus.gif
+
+
+Creator of the universe:  Kevin Henneck
+
+The bodies do not move on account of uranus, which has negative mass.

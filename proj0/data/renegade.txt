@@ -1,0 +1,16 @@
+6
+2.50e11
+0.000e00 0.000e00 0.000e00 0.000e00 2e32 sun.gif
+2e11 0.000e00 0.000e00 2.582e05 6e24 earth.gif
+-2e11 0.000e00 0.000e00 -2.582e05 6e24 earth.gif
+0e0 2e11 -2.582e05 0.000e00 6e24 earth.gif
+0e0 -2e11 2.582e05 0.000e00 6e24 earth.gif
+2.0001e11 0.000e00 0e0 -2.646e05 4.869e14 pluto.gif
+
+Creator of universe: David Cohen-Tanugi, COS 126, Fall 2006
+
+I created a symmetric/conformist universe with four earths rotating in
+uniform circular motion (using a=mv2/r) and a renegade/daredevil planet
+that runs in the opposite direction teases the earths by barely touching
+them. Will it ever lose at its own rebel game, by coming too close to an
+earth and get trapped in its orbit? 
