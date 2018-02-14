@@ -19,7 +19,7 @@ public class TERenderer {
     private int yOffset;
 
     /**
-     * Same functionality as the other constructor. The only difference is that the xOff
+     * Same functionality as the other initialization method. The only difference is that the xOff
      * and yOff parameters will change where the renderFrame method starts drawing. For example,
      * if you select w = 60, h = 30, xOff = 3, yOff = 4 and then call renderFrame with a
      * TETile[50][25] array, the renderer will leave 3 tiles blank on the left, 7 tiles blank
@@ -49,11 +49,11 @@ public class TERenderer {
      * width and height of the world in number of tiles. If the TETile[][] array that you
      * pass to renderFrame is smaller than this, then extra blank space will be left
      * on the right and top edges of the frame. For example, if you select w = 60 and
-     * h = 30, this constructor will create a 60 tile wide by 30 tile tall window. If
+     * h = 30, this method will create a 60 tile wide by 30 tile tall window. If
      * you then subsequently call renderFrame with a TETile[50][25] array, it will
      * leave 10 tiles blank on the right side and 5 tiles blank on the top side. If
      * you want to leave extra space on the left or bottom instead, use the other
-     * constructor.
+     * initializatiom method.
      * @param w width of the window in tiles
      * @param h height of the window in tiles.
      */
