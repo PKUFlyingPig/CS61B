@@ -12,7 +12,7 @@ public class Main {
         } else if (args.length == 1) {
             Game game = new Game();
             game.playWithInputString(args[0]);
-            System.out.println(game.toString());
+            System.out.println(TETile.toString(worldState));
         } else {
             Game game = new Game();
             game.playWithKeyboard();
