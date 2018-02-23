@@ -189,4 +189,27 @@ public class TETile {
 
         return copy;
     }
+
+    @Override
+    /** Provides an equals method that is consistent
+     *  with the way that the autograder works.
+     */
+    public boolean equals(Object x) {
+        if (this == x) {
+            return true;
+        }
+        if (x == null) {
+            return false;
+        }
+        if (this.getClass() != x.getClass()) {
+            return false;
+        }
+        TETile that = (TETile) x;
+        return this.character == that.character;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.character;
+    }
 }
