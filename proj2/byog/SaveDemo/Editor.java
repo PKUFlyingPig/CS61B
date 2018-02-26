@@ -35,13 +35,13 @@ public class Editor implements Serializable {
     }
 
     public void show() {
-        int mid_width = width / 2;
-        int mid_height = height / 2;
+        int midWidth = width / 2;
+        int midHeight = height / 2;
 
         StdDraw.clear(Color.BLACK);
         StdDraw.setPenColor(Color.WHITE);
-        StdDraw.text(mid_width, mid_height, words);
-        StdDraw.text(mid_height, height - 1, m.getSheep());
+        StdDraw.text(midWidth, midHeight, words);
+        StdDraw.text(midHeight, height - 1, m.getSheep());
         StdDraw.show();
 
     }
