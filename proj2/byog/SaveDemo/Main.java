@@ -38,9 +38,9 @@ public class Main {
         StdDraw.clear(StdDraw.BLACK);
         w.draw();
         StdDraw.setPenColor(StdDraw.WHITE);
-        StdDraw.text(0.3, 0.8, "Press a to add square.");
-        StdDraw.text(0.3, 0.85, "Press q to quit and save.");
-        StdDraw.text(0.3, 0.9, "Delete world.ser to go back to a blank canvas.");
+        StdDraw.text(0.5, 0.8, "Press a to add square.");
+        StdDraw.text(0.5, 0.85, "Press q to quit and save.");
+        StdDraw.text(0.5, 0.9, "Delete world.ser to go back to a blank canvas.");
         StdDraw.show();
         StdDraw.pause(100);
     }
