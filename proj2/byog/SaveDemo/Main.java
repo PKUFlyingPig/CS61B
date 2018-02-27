@@ -11,9 +11,10 @@ import java.io.ObjectOutputStream;
 
 public class Main {
     public static void main(String[] args) {
-        /* If an editor has been saved before, we first load it */
-        Editor e = loadEditor();
-        e.initialize();
+        StdDraw.enableDoubleBuffering();
+
+        /* If a World has been saved before, we first load it */
+        World w = loadWorld();
 
         /* Loop to run the Editor with the following commands:
               $: Saves the current screen
@@ -25,29 +26,38 @@ public class Main {
             if (StdDraw.hasNextKeyTyped()) {
                 char c = StdDraw.nextKeyTyped();
                 switch (c) {
-                    case '$':
-                        saveEditor(e);
+                    case 'a':
+                        w.addRandomSquare();
                         break;
-                    case '@':
+                    case 'q':
+                        saveWorld(w);
                         System.exit(0);
                         break;
-                    case '!':
-                        e.tend();
-                        break;
-                    default: e.addChar(c);
+                    default:
                 }
             }
-            e.show();
+            drawEverything(w);
         }
     }
 
-    private static Editor loadEditor() {
-        File f = new File("./save_data");
+    private static void drawEverything(World w) {
+        StdDraw.clear(StdDraw.BLACK);
+        w.draw();
+        StdDraw.setPenColor(StdDraw.WHITE);
+        StdDraw.text(0.3, 0.8, "Press a to add square.");
+        StdDraw.text(0.3, 0.85, "Press q to quit and save.");
+        StdDraw.text(0.3, 0.9, "Delete world.ser to go back to a blank canvas.");
+        StdDraw.show();
+        StdDraw.pause(100);
+    }
+
+    private static World loadWorld() {
+        File f = new File("./world.ser");
         if (f.exists()) {
             try {
                 FileInputStream fs = new FileInputStream(f);
                 ObjectInputStream os = new ObjectInputStream(fs);
-                return (Editor) os.readObject();
+                return (World) os.readObject();
             } catch (FileNotFoundException e) {
                 System.out.println("file not found");
                 System.exit(0);
@@ -60,19 +70,19 @@ public class Main {
             }
         }
 
-        /* In the case no Editor has been saved yet, we return a new one. */
-        return new Editor();
+        /* In the case no World has been saved yet, we return a new one. */
+        return new World();
     }
 
-    private static void saveEditor(Editor editor) {
-        File f = new File("./save_data");
+    private static void saveWorld(World w) {
+        File f = new File("./world.ser");
         try {
             if (!f.exists()) {
                 f.createNewFile();
             }
             FileOutputStream fs = new FileOutputStream(f);
             ObjectOutputStream os = new ObjectOutputStream(fs);
-            os.writeObject(editor);
+            os.writeObject(w);
         }  catch (FileNotFoundException e) {
             System.out.println("file not found");
             System.exit(0);
