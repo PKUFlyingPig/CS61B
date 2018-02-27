@@ -16,12 +16,6 @@ public class Main {
         /* If a World has been saved before, we first load it */
         World w = loadWorld();
 
-        /* Loop to run the Editor with the following commands:
-              $: Saves the current screen
-              @: Exits the editor
-              !: Fred suggests the gang splits up (again...)
-           Any other character will be added to a String which
-           is displayed in the center of the screen */
         while (true) {
             if (StdDraw.hasNextKeyTyped()) {
                 char c = StdDraw.nextKeyTyped();
