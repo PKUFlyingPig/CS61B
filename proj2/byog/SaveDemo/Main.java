@@ -51,7 +51,9 @@ public class Main {
             try {
                 FileInputStream fs = new FileInputStream(f);
                 ObjectInputStream os = new ObjectInputStream(fs);
-                return (World) os.readObject();
+                World loadWorld = (World) os.readObject();
+                os.close();
+                return loadWorld;
             } catch (FileNotFoundException e) {
                 System.out.println("file not found");
                 System.exit(0);
@@ -77,6 +79,7 @@ public class Main {
             FileOutputStream fs = new FileOutputStream(f);
             ObjectOutputStream os = new ObjectOutputStream(fs);
             os.writeObject(w);
+            os.close();
         }  catch (FileNotFoundException e) {
             System.out.println("file not found");
             System.exit(0);
