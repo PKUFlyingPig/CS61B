@@ -8,7 +8,8 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
- * Local tester for the Solver class.
+ * Local tester for the Solver class. You'll need to uncomment
+ * in order to run the tests.
  */
 public class TestSolver {
     public static class BoardPuzzleSolution {
@@ -35,19 +36,6 @@ public class TestSolver {
         }
     }
 
-    public static Board readBoard(String filename) {
-        In in = new In(filename);
-        int N = in.readInt();
-        int[][] tiles = new int[N][N];
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                tiles[i][j] = in.readInt();
-            }
-        }
-        Board start = new Board(tiles);
-        return start;
-    }
-
     /** Takes as input a word puzzle string and returns a WordPuzzle
      *  object. For example, "kept, tent, kept-kent-tent, 13"
      *  would return a WordPuzzle with start = kept, goal = tent,
@@ -63,9 +51,9 @@ public class TestSolver {
                 return null;
             }
             String[] tokens = wp.split(",");
-            String start = tokens[0].replaceAll("\\s+","");
-            String goal = tokens[1].replaceAll("\\s+","");
-            String solutionString = tokens[2].replaceAll("\\s+","");
+            String start = tokens[0].replaceAll("\\s+", "");
+            String goal = tokens[1].replaceAll("\\s+", "");
+            String solutionString = tokens[2].replaceAll("\\s+", "");
             List<String> possibleSolution = Arrays.asList(solutionString.split("-"));
             int numMoves = possibleSolution.size() - 1;
             return new WordPuzzleSolution(start, goal, numMoves, possibleSolution);
@@ -74,6 +62,7 @@ public class TestSolver {
         }
     }
 
+/* Uncomment once you've written Solver.
     @Test(timeout = 10000)
     public void testWordPuzzles() {
         In in = new In("word_puzzles.txt");
@@ -89,6 +78,21 @@ public class TestSolver {
 
             assertEquals(errorMessage, wps.numMoves, s.moves());
         }
+    }
+ */
+
+ /* Uncomment everything in this block once you've written Board.
+     public static Board readBoard(String filename) {
+        In in = new In(filename);
+        int N = in.readInt();
+        int[][] tiles = new int[N][N];
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                tiles[i][j] = in.readInt();
+            }
+        }
+        Board start = new Board(tiles);
+        return start;
     }
 
     @Test(timeout = 1000)
@@ -141,5 +145,5 @@ public class TestSolver {
             Solver s = new Solver(b);
             assertEquals("Wrong number of moves on " + puzzleName, bps.numMoves, s.moves());
         }
-    }
+    }*/
 }
