@@ -1,0 +1,59 @@
+# format of each line of this file is as follows:
+# start, goal, solution, total number of words enqueued in our MinPQ
+#
+# The number of words enqueued may vary depending on how you break ties.
+# The solver tester does not check the number of enqueues! You'll need to do this yourself.
+
+# puzzles solvable in one move
+polar, solar, polar-solar, 2
+vitamins, vitamin, vitamins-vitamin, 2
+gender, lender, gender-lender, 5
+cafe, care, cafe-care, 9
+
+# puzzles solvable in two moves
+landing, ending, landing-lending-ending, 6
+site, sized, site-size-sized, 15
+kept, tent, kept-kent-tent, 14
+
+# puzzles solvable in three moves
+chapter, charges, chapter-charter-charger-charges, 9
+frank, blank, frank-rank-bank-blank, 15
+when, three, when-then-thee-three, 21
+face, rates, face-fate-rate-rates, 67
+
+# puzzles solvable in four moves
+mines, loved, mines-lines-lives-lived-loved, 44
+side, wiki, side-wide-wife-wifi-wiki, 164
+come, waves, come-cove-cave-wave-waves, 87
+
+# puzzles solvable in seven moves
+rouge, matter, rouge-route-router-roster-foster-faster-master-matter, 42
+foster, layers, foster-faster-master-matter-latter-later-layer-layers, 58
+donors, robots, donors-doors-door-doom-room-root-roots-robots, 49
+
+#puzzles solveable in four moves where some words may get enqueued multiple times
+wins, time, wins-wine-mine-mime-time, 171
+rays, sun, rays-says-say-san-sun, 177
+codes, hose, codes-comes-homes-home-hose, 105
+vast, farm, vast-vat-var-far-farm, 220
+charm, vat, charm-chart-cart-cat-vat, 147
+
+#puzzles solveable in five moves where some words may get enqueued multiple times
+strand, find, strand-stand-sand-band-bind-find, 97
+minds, fired, minds-finds-find-fine-fire-fired, 164
+tried, dish, tried-tied-died-did-dis-dish, 227
+looks, boys, looks-loops-oops-tops-toys-boys, 125
+
+#puzzles solveable in six moves where some words may get enqueued multiple times
+slow, breed, slow-low-row-rod-red-reed-breed, 181
+faced, anger, faced-face-race-rage-range-ranger-anger, 608
+
+#puzzles solveable in seven moves where some words may get enqueued multiple times
+sara, shirts, sara-para-part-port-sort-sorts-shorts-shirts, 173
+myth, candy, myth-math-mats-hats-hans-hands-handy-candy, 2203
+
+#puzzles solveable in 10 moves where some words may get enqueued multiple times
+screw, nearly, screw-crew-drew-draw-raw-ra-ea-ear-earl-early-nearly, 1600
+
+#puzzles solveable in 11 moves where some words may get enqueued multiple times
+hostel, through, hostel-hosted-posted-poster-roster-router-route-rouge-rough-tough-though-through, 260
