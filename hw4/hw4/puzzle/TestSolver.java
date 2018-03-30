@@ -65,7 +65,7 @@ public class TestSolver {
 /* Uncomment once you've written Solver.
     @Test(timeout = 10000)
     public void testWordPuzzles() {
-        In in = new In("word_puzzles.txt");
+        In in = new In("input/word_puzzles.txt");
         while (!in.isEmpty()) {
             WordPuzzleSolution wps = stringToWordPuzzle(in.readLine());
             if (wps == null) {
@@ -99,7 +99,7 @@ public class TestSolver {
     public void test2x2BoardPuzzles() {
         for (int i = 0; i <= 6; i += 1) {
             String pnum = String.format("%02d", i);
-            String puzzleName = "puzzle2x2-" + pnum + ".txt";
+            String puzzleName = "input/puzzle2x2-" + pnum + ".txt";
             Board b = readBoard(puzzleName);
             int numMoves = i;
             BoardPuzzleSolution bps = new BoardPuzzleSolution(puzzleName, b, numMoves);
@@ -112,7 +112,7 @@ public class TestSolver {
     public void test3x3BoardPuzzles() {
         for (int i = 0; i <= 30; i += 1) {
             String pnum = String.format("%02d", i);
-            String puzzleName = "puzzle3x3-" + pnum + ".txt";
+            String puzzleName = "input/puzzle3x3-" + pnum + ".txt";
             Board b = readBoard(puzzleName);
             int numMoves = i;
             BoardPuzzleSolution bps = new BoardPuzzleSolution(puzzleName, b, numMoves);
@@ -125,7 +125,7 @@ public class TestSolver {
     public void test4x4BoardPuzzles() {
         for (int i = 0; i <= 30; i += 1) {
             String pnum = String.format("%02d", i);
-            String puzzleName = "puzzle4x4-" + pnum + ".txt";
+            String puzzleName = "input/puzzle4x4-" + pnum + ".txt";
             Board b = readBoard(puzzleName);
             int numMoves = i;
             BoardPuzzleSolution bps = new BoardPuzzleSolution(puzzleName, b, numMoves);
@@ -138,7 +138,7 @@ public class TestSolver {
     public void testVariousPuzzles() {
         for (int i = 0; i <= 31; i += 1) {
             String pnum = String.format("%02d", i);
-            String puzzleName = "puzzle" + pnum + ".txt";
+            String puzzleName = "input/puzzle" + pnum + ".txt";
             Board b = readBoard(puzzleName);
             int numMoves = i;
             BoardPuzzleSolution bps = new BoardPuzzleSolution(puzzleName, b, numMoves);
