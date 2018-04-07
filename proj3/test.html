@@ -1,0 +1,43 @@
+<!--This file is a test file for your convenience.
+    It makes a request to the variable query_url and displays the base64 encoded image result. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<p>This html file makes the following query to your code: <tt>{lrlon=-122.24053369025242, ullon=-122.24163047377972, w=892.0, h=875.0, ullat=37.87655856892288, lrlat=37.87548268822065}</tt>
+
+<p>The expected result from getMapRaster is:
+<tt>{raster_ul_lon=-122.24212646484375, depth=7, raster_lr_lon=-122.24006652832031, raster_lr_lat=37.87538940251607, render_grid=[[d7_x84_y28.png, d7_x85_y28.png, d7_x86_y28.png], [d7_x84_y29.png, d7_x85_y29.png, d7_x86_y29.png], [d7_x84_y30.png, d7_x85_y30.png, d7_x86_y30.png]], raster_ul_lat=37.87701580361881, query_success=true}</tt>
+
+<p>The image output of your program is shown below (will be blank if your server isn't running or working properly):
+
+<p><img id="map">
+   <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        var query_url = "http://localhost:4567/raster";
+        $.get({
+            async: false,
+            url: query_url,
+            data: { h: 875,
+                    lrlat: 37.87548268822065,
+                    lrlon: -122.24053369025242,
+                    ullat: 37.87655856892288,
+                    ullon: -122.24163047377972,
+                    w: 892
+                   },
+            success: function(data) {
+                map.src = "data:image/png;base64," + data.b64_encoded_image_data;
+            },
+            dataType: "json"
+        });
+    </script>
+
+<p>The correct output should be:
+<p><img src="http://datastructur.es/sp17/materials/proj/proj3/test.png">
+
+<p>If your image looks different (or is blank), your implementation is not correct.
+</body>
+
+
+</html>

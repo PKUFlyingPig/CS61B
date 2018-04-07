@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<p>This html file makes the following query to your code: <tt>{lrlon=-122.20908713544797, ullon=-122.3027284165759, w=305.0, h=300.0, ullat=37.88708748276975, lrlat=37.848731523430196}</tt>
+
+<p>The expected result from getMapRaster is:
+<tt>{raster_ul_lon=-122.2998046875, depth=1, raster_lr_lon=-122.2119140625, raster_lr_lat=37.82280243352756, render_grid=[[d1_x0_y0.png, d1_x1_y0.png], [d1_x0_y1.png, d1_x1_y1.png]], raster_ul_lat=37.892195547244356, query_success=true}
+</tt>
+
+<p>The image output of your program is shown below (will be blank if your server isn't running or working properly):
+
+<p><meta charset="UTF-8">
+    <img id="map">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        var query_url = "http://localhost:4567/raster";
+        $.get({
+            async: false,
+            url: query_url,
+            data: { h: 300,
+                    lrlat: 37.848731523430196,
+                    lrlon: -122.20908713544797,
+                    ullat: 37.88708748276975,
+                    ullon: -122.3027284165759,
+                    w: 305
+                   },
+            success: function(data) {
+                map.src = "data:image/png;base64," + data.b64_encoded_image_data;
+            },
+            dataType: "json"
+        });
+    </script>
+
+<p>The correct output should be:
+<p><img src="http://datastructur.es/sp17/materials/proj/proj3/test1234.png">
+
+<p>If your image looks different (or is blank), your implementation is not correct.    
+</body>
+</html>
