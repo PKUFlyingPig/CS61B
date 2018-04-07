@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * GraphDB in isolation from all the rest of the parts of this assignment.
  */
 public class GraphDBLauncher {
-    private static final String OSM_DB_PATH = "../library-sp18/data/berkeley-2018.osm.gz";
+    private static final String OSM_DB_PATH = "../library-sp18/data/berkeley-2018.osm.xml";
 
     public static void main(String[] args) {
         GraphDB g = new GraphDB(OSM_DB_PATH);
