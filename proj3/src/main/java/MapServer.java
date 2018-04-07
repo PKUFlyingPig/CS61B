@@ -50,7 +50,7 @@ public class MapServer {
      * The OSM XML file path. Downloaded from <a href="http://download.bbbike.org/osm/">here</a>
      * using custom region selection.
      **/
-    private static final String OSM_DB_PATH = "../library-sp18/data/berkeley-2018.osm.xml";
+    private static final String OSM_DB_PATH = "../library-sp18/data/berkeley-2018.osm";
     /**
      * Each raster request to the server will have the following parameters
      * as keys in the params map accessible by,
