@@ -9,9 +9,7 @@ import java.util.Map;
  */
 public class Rasterer {
 
-    /** imgRoot is the name of the directory containing the images.
-     *  You may not actually need this for your class. */
-    public Rasterer(String imgRoot) {
+    public Rasterer() {
         // YOUR CODE HERE
     }
 
@@ -44,7 +42,6 @@ public class Rasterer {
      *                    string. <br>
      * "query_success" -> Boolean, whether the query was able to successfully complete. Don't
      *                    forget to set this to true! <br>
-     * @see #REQUIRED_RASTER_REQUEST_PARAMS
      */
     public Map<String, Object> getMapRaster(Map<String, Double> params) {
         // System.out.println(params);

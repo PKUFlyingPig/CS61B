@@ -90,7 +90,7 @@ public class MapServer {
      **/
     public static void initialize() {
         graph = new GraphDB(OSM_DB_PATH);
-        rasterer = new Rasterer(IMG_ROOT);
+        rasterer = new Rasterer();
     }
 
     public static void main(String[] args) {
@@ -213,7 +213,7 @@ public class MapServer {
 
         for (int r = 0; r < numVertTiles; r += 1) {
             for (int c = 0; c < numHorizTiles; c += 1) {
-                graphic.drawImage(getImage(renderGrid[r][c]), x, y, null);
+                graphic.drawImage(getImage(IMG_ROOT + renderGrid[r][c]), x, y, null);
                 x += MapServer.TILE_SIZE;
                 if (x >= img.getWidth()) {
                     x = 0;
