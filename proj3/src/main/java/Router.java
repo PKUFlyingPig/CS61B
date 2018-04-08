@@ -51,14 +51,17 @@ public class Router {
         /** A mapping of integer values to directions.*/
         public static final String[] DIRECTIONS = new String[NUM_DIRECTIONS];
 
+        /** Default name for an unknown way. */
+        public static final String UNKNOWN_ROAD = "unknown road";
+        
         /** Static initializer. */
         static {
             DIRECTIONS[START] = "Start";
             DIRECTIONS[STRAIGHT] = "Go straight";
             DIRECTIONS[SLIGHT_LEFT] = "Slight left";
             DIRECTIONS[SLIGHT_RIGHT] = "Slight right";
-            DIRECTIONS[RIGHT] = "Turn left";
-            DIRECTIONS[LEFT] = "Turn right";
+            DIRECTIONS[LEFT] = "Turn left";
+            DIRECTIONS[RIGHT] = "Turn right";
             DIRECTIONS[SHARP_LEFT] = "Sharp left";
             DIRECTIONS[SHARP_RIGHT] = "Sharp right";
         }
@@ -68,7 +71,13 @@ public class Router {
         /** The name of the way I represent. */
         String way;
         /** The distance along this way I represent. */
-        double distance = 0.0;
+        double distance;
+
+        public NavigationDirection() {
+            this.direction = STRAIGHT;
+            this.way = UNKNOWN_ROAD;
+            this.distance = 0.0;
+        }
 
         public String toString() {
             return String.format("%s on %s and continue for %.3f miles.", DIRECTIONS[direction], way, distance);
