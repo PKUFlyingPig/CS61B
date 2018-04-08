@@ -54,7 +54,7 @@ public class Router {
         /** Static initializer. */
         static {
             DIRECTIONS[START] = "Start";
-            DIRECTIONS[STRAIGHT] = "Continue straight";
+            DIRECTIONS[STRAIGHT] = "Go straight";
             DIRECTIONS[SLIGHT_LEFT] = "Slight left";
             DIRECTIONS[SLIGHT_RIGHT] = "Slight right";
             DIRECTIONS[RIGHT] = "Turn left";
@@ -71,7 +71,7 @@ public class Router {
         double distance = 0.0;
 
         public String toString() {
-            return String.format("%s on %s for %.3f miles.", DIRECTIONS[direction], way, distance);
+            return String.format("%s on %s and continue for %.3f miles.", DIRECTIONS[direction], way, distance);
         }
 
         @Override

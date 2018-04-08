@@ -138,6 +138,8 @@ $(function() {
                     if (successCallback) {
                         successCallback();
                     }
+                } else {
+                    $loadingstatus.hide();
                 }
             },
             error: function() {
