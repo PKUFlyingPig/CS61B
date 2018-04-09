@@ -180,7 +180,7 @@ body {
 }
 .directions-window {
   display: none;
-  width: 400px;
+  width: 450px;
   padding: 12px;
   border-radius: 6px;
   z-index: 1;
