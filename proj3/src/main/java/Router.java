@@ -14,13 +14,12 @@ public class Router {
      * Return a List of longs representing the shortest path from the node
      * closest to a start location and the node closest to the destination
      * location.
-     * where the longs are node IDs.
      * @param g The graph to use.
      * @param stlon The longitude of the start location.
      * @param stlat The latitude of the start location.
      * @param destlon The longitude of the destination location.
      * @param destlat The latitude of the destination location.
-     * @return A list of id's in the order visited on the shortest path.
+     * @return A list of node id's in the order visited on the shortest path.
      */
     public static List<Long> shortestPath(GraphDB g, double stlon, double stlat,
                                           double destlon, double destlat) {
