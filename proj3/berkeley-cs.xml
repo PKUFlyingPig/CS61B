@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--Totally not accurate, shamelessly and partially copied off of hkn's course guide graph.-->
+<prereqs version="1.0">
+    <course id="CS 61A" division="lower" version="1">
+        <tag k="professor" v="Hilfinger"/>
+        <tag k="Fun level" v="low"/>
+    </course>
+    <course id="CS 61B" division="lower" version="1">
+        <tag k="professor" v="Hug"/>
+        <tag k="Fun level" v="extreme"/>
+        <tag k="Pain" v="0"/>
+        <tag k="No" v="Limit"/>
+    </course>
+    <course id="CS 61C" division="lower" version="1">
+        <tag k="Pain" v="Integer Overflow"/>
+    </course>
+    <course id="CS 70" division="lower" version="1">
+        <tag k="Pain" v="Inductive and probably painful."/>
+    </course>
+    <course id="CS 188" division="upper" version="1"/>
+    <course id="CS 184" division="upper" version="1"/>
+    <course id="CS 186" division="upper" version="1"/>
+    <course id="CS 189" division="upper" version="1"/>
+    <course id="CS 162" division="upper" version="1"/>
+    <course id="CS 160" division="upper" version="1"/>
+    <course id="CS 168" division="upper" version="1"/>
+    <course id="CS 164" division="upper" version="1"/>
+    <course id="CS 169" division="upper" version="1"/>
+    <course id="CS 161" division="upper" version="1"/>
+    <course id="CS 170" division="upper" version="1"/>
+    <course id="CS 176" division="upper" version="1"/>
+    <course id="CS 172" division="upper" version="1"/>
+    <course id="CS 174" division="upper" version="1"/>
+    <course id="CS 191" division="upper" version="1"/>
+    <course id="CS 152" division="upper" version="1"/>
+    <req version="1">
+        <from ref="CS 61A"/>
+        <to ref="CS 61B"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61A"/>
+        <to ref="CS 61C"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 61C"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 184"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 186"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 188"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 160"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 162"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 164"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 169"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61B"/>
+        <to ref="CS 170"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61C"/>
+        <to ref="CS 161"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61C"/>
+        <to ref="CS 162"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61C"/>
+        <to ref="CS 164"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61C"/>
+        <to ref="CS 169"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61C"/>
+        <to ref="CS 186"/>
+    </req>
+    <req version="1">
+        <from ref="CS 61C"/>
+        <to ref="CS 152"/>
+    </req>
+    <req version="1">
+        <from ref="CS 70"/>
+        <to ref="CS 188"/>
+    </req>
+    <req version="1">
+        <from ref="CS 70"/>
+        <to ref="CS 161"/>
+    </req>
+    <req version="1">
+        <from ref="CS 70"/>
+        <to ref="CS 169"/>
+    </req>
+    <req version="1">
+        <from ref="CS 70"/>
+        <to ref="CS 162"/>
+    </req>
+    <req version="1">
+        <from ref="CS 70"/>
+        <to ref="CS 170"/>
+    </req>
+</prereqs>
