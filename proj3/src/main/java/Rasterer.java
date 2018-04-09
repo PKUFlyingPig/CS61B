@@ -37,7 +37,7 @@ public class Rasterer {
      * "raster_ul_lat" -> Number, the bounding upper left latitude of the rastered image <br>
      * "raster_lr_lon" -> Number, the bounding lower right longitude of the rastered image <br>
      * "raster_lr_lat" -> Number, the bounding lower right latitude of the rastered image <br>
-     * "depth"         -> Number, the 1-indexed depth of the nodes of the rastered image.
+     * "depth"         -> Number, the depth of the nodes of the rastered image.
      *                    Can also be interpreted as the length of the numbers in the image
      *                    string. <br>
      * "query_success" -> Boolean, whether the query was able to successfully complete. Don't
