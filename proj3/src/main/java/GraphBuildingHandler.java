@@ -39,6 +39,10 @@ public class GraphBuildingHandler extends DefaultHandler {
     private String activeState = "";
     private final GraphDB g;
 
+    /**
+     * Create a new GraphBuildingHandler.
+     * @param g The graph to populate with the XML data.
+     */
     public GraphBuildingHandler(GraphDB g) {
         this.g = g;
     }

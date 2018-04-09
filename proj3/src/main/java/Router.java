@@ -11,8 +11,16 @@ import java.util.Objects;
  */
 public class Router {
     /**
-     * Return a List of longs representing the shortest path from st to dest,
+     * Return a List of longs representing the shortest path from the node
+     * closest to a start location and the node closest to the destination
+     * location.
      * where the longs are node IDs.
+     * @param g The graph to use.
+     * @param stlon The longitude of the start location.
+     * @param stlat The latitude of the start location.
+     * @param destlon The longitude of the destination location.
+     * @param destlat The latitude of the destination location.
+     * @return A list of id's in the order visited on the shortest path.
      */
     public static List<Long> shortestPath(GraphDB g, double stlon, double stlat,
                                           double destlon, double destlat) {
@@ -20,9 +28,12 @@ public class Router {
     }
 
     /**
-     * Given a ROUTE as a list of longs representing graph node IDs on graph G,
-     * return a List of NavigationDirection objects representing the correct travel directions
-     * in the right order.
+     * Create the list of directions corresponding to a route on the graph.
+     * @param g The graph to use.
+     * @param route The route to translate into directions. Each element
+     *              corresponds to a node from the graph in the route.
+     * @return A list of NavigatiionDirection objects corresponding to the input
+     * route.
      */
     public static List<NavigationDirection> routeDirections(GraphDB g, List<Long> route) {
         return null; // FIXME
@@ -73,6 +84,9 @@ public class Router {
         /** The distance along this way I represent. */
         double distance;
 
+        /**
+         * Create a default, anonymous NavigationDirection.
+         */
         public NavigationDirection() {
             this.direction = STRAIGHT;
             this.way = UNKNOWN_ROAD;
@@ -80,7 +94,8 @@ public class Router {
         }
 
         public String toString() {
-            return String.format("%s on %s and continue for %.3f miles.", DIRECTIONS[direction], way, distance);
+            return String.format("%s on %s and continue for %.3f miles.",
+                    DIRECTIONS[direction], way, distance);
         }
 
         @Override

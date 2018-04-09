@@ -55,17 +55,17 @@ public class MapServer {
      * Each raster request to the server will have the following parameters
      * as keys in the params map accessible by,
      * i.e., params.get("ullat") inside getMapRaster(). <br>
-     * ullat -> upper left corner latitude,<br> ullon -> upper left corner longitude, <br>
-     * lrlat -> lower right corner latitude,<br> lrlon -> lower right corner longitude <br>
-     * w -> user viewport window width in pixels,<br> h -> user viewport height in pixels.
+     * ullat : upper left corner latitude, <br> ullon : upper left corner longitude, <br>
+     * lrlat : lower right corner latitude,<br> lrlon : lower right corner longitude <br>
+     * w : user viewport window width in pixels,<br> h : user viewport height in pixels.
      **/
     private static final String[] REQUIRED_RASTER_REQUEST_PARAMS = {"ullat", "ullon", "lrlat",
         "lrlon", "w", "h"};
     /**
      * Each route request to the server will have the following parameters
      * as keys in the params map.<br>
-     * start_lat -> start point latitude,<br> start_lon -> start point longitude,<br>
-     * end_lat -> end point latitude, <br>end_lon -> end point longitude.
+     * start_lat : start point latitude,<br> start_lon : start point longitude,<br>
+     * end_lat : end point latitude, <br>end_lon : end point longitude.
      **/
     private static final String[] REQUIRED_ROUTE_REQUEST_PARAMS = {"start_lat", "start_lon",
         "end_lat", "end_lon"};
@@ -173,8 +173,8 @@ public class MapServer {
     /**
      * Validate & return a parameter map of the required request parameters.
      * Requires that all input parameters are doubles.
-     * @param req HTTP Request
-     * @param requiredParams TestParams to validate
+     * @param req HTTP Request.
+     * @param requiredParams TestParams to validate.
      * @return A populated map of input parameter to it's numerical value.
      */
     private static HashMap<String, Double> getRequestParams(
@@ -196,7 +196,8 @@ public class MapServer {
         return params;
     }
 
-    /** Writes the images corresponding to rasteredImgParams to the output stream.
+    /**
+     * Writes the images corresponding to rasteredImgParams to the output stream.
      * In Spring 2016, students had to do this on their own, but in 2017,
      * we have made this into provided code since it was just a bit too low level.
      */
@@ -293,16 +294,17 @@ public class MapServer {
      * @return A list of locations whose cleaned name matches the
      * cleaned <code>locationName</code>, and each location is a map of parameters for the Json
      * response as specified: <br>
-     * "lat" -> Number, The latitude of the node. <br>
-     * "lon" -> Number, The longitude of the node. <br>
-     * "name" -> String, The actual name of the node. <br>
-     * "id" -> Number, The id of the node. <br>
+     * "lat" : Number, The latitude of the node. <br>
+     * "lon" : Number, The longitude of the node. <br>
+     * "name" : String, The actual name of the node. <br>
+     * "id" : Number, The id of the node. <br>
      */
     public static List<Map<String, Object>> getLocations(String locationName) {
         return new LinkedList<>();
     }
 
-    /** Validates that Rasterer has returned a result that can be rendered.
+    /**
+     * Validates that Rasterer has returned a result that can be rendered.
      * @param rip : Parameters provided by the rasterer
      */
     private static boolean validateRasteredImgParams(Map<String, Object> rip) {
@@ -322,8 +324,9 @@ public class MapServer {
         return true;
     }
 
-    /** Takes the route of this MapServer and converts it into an HTML friendly
-     *  String to be passed to the frontend.
+    /**
+     * Takes the route of this MapServer and converts it into an HTML friendly
+     * String to be passed to the frontend.
      */
     private static String getDirectionsText() {
         List<Router.NavigationDirection> directions = Router.routeDirections(graph, route);
