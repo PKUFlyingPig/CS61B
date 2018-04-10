@@ -5,7 +5,13 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Collections;
+import java.util.StringJoiner;
+import java.util.Arrays;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -35,7 +41,8 @@ public class TestRasterer {
             Map<String, Double> params = testParams.get(i);
             Map<String, Object> actual = rasterer.getMapRaster(params);
             Map<String, Object> expected = expectedResults.get(i);
-            String msg = "Your results did not match the expected results for input " + mapToString(params) + ".\n";
+            String msg = "Your results did not match the expected results for input "
+                         + mapToString(params) + ".\n";
             checkParamsMap(msg, expected, actual);
         }
     }
@@ -88,18 +95,23 @@ public class TestRasterer {
         return expected;
     }
 
-    private void checkParamsMap(String err, Map<String, Object> expected, Map<String, Object> actual) {
+    private void checkParamsMap(String err, Map<String, Object> expected,
+                                            Map<String, Object> actual) {
         for (String key : expected.keySet()) {
-            assertTrue(err + "Your results map is missing " + key, actual.containsKey(key));
+            assertTrue(err + "Your results map is missing "
+                       + key, actual.containsKey(key));
             Object o1 = expected.get(key);
             Object o2 = actual.get(key);
 
             if (o1 instanceof Double) {
-                assertTrue(genDiffMsg(err, expected, actual), Math.abs((Double) o1 - (Double) o2) < DOUBLE_THRESHOLD);
+                String errMsg = genDiffErrMsg(err, expected, actual);
+                assertTrue(errMsg, Math.abs((Double) o1 - (Double) o2) < DOUBLE_THRESHOLD);
             } else if (o1 instanceof String[][]) {
-                assertArrayEquals(genDiffMsg(err, expected, actual), (String[][]) o1, (String[][]) o2);
+                String errMsg = genDiffErrMsg(err, expected, actual);
+                assertArrayEquals(errMsg, (String[][]) o1, (String[][]) o2);
             } else {
-                assertEquals(genDiffMsg(err, expected, actual), o1, o2);
+                String errMsg = genDiffErrMsg(err, expected, actual);
+                assertEquals(errMsg, o1, o2);
             }
         }
     }
@@ -107,7 +119,8 @@ public class TestRasterer {
     /** Generates an actual/expected message from a base message, an actual map,
      *  and an expected map.
      */
-    private String genDiffMsg(String basemsg, Map<String, Object> expected, Map<String, Object> actual) {
+    private String genDiffErrMsg(String basemsg, Map<String, Object> expected,
+                                 Map<String, Object> actual) {
         return basemsg + "Expected: " + mapToString(expected) + ", but got\n"
                        + "Actual  : " + mapToString(actual);
     }
