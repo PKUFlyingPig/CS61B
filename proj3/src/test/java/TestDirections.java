@@ -9,6 +9,8 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
+/** Test of the written driving directions part of the assignment. This part of the assignment is 
+  * optional and not worth any credit, and these tests should be thought of as just for fun.*/
 public class TestDirections {
     private static final String PATHS_FILE = "path_results.txt";
     private static final String RESULTS_FILE = "directions_results.txt";
