@@ -4,17 +4,16 @@ import org.junit.Test;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.DecimalFormat;
+import java.util.*;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class TestRasterer {
-    private static final double DOUBLE_THRESHOLD = 0.0000000000001;
+    private static final double DOUBLE_THRESHOLD = 0.000000001;
+    private static DecimalFormat df2 = new DecimalFormat(".#########");
     private static final String PARAMS_FILE = "raster_params.txt";
     private static final String RESULTS_FILE = "raster_results.txt";
     private static final int NUM_TESTS = 8;
@@ -36,7 +35,8 @@ public class TestRasterer {
             Map<String, Double> params = testParams.get(i);
             Map<String, Object> actual = rasterer.getMapRaster(params);
             Map<String, Object> expected = expectedResults.get(i);
-            checkParamsMap("Your results did not match the expected results", expected, actual);
+            String msg = "Your results did not match the expected results for input " + mapToString(params) + ".\n";
+            checkParamsMap(msg, expected, actual);
         }
     }
 
@@ -88,18 +88,58 @@ public class TestRasterer {
         return expected;
     }
 
-    private void checkParamsMap(String err, Map<String, Object> m1, Map<String, Object> m2) {
-        for (String key : m1.keySet()) {
-            assertTrue("Your results map is missing " + key, m2.containsKey(key));
-            Object o1 = m1.get(key);
-            Object o2 = m2.get(key);
+    private void checkParamsMap(String err, Map<String, Object> expected, Map<String, Object> actual) {
+        for (String key : expected.keySet()) {
+            assertTrue(err + "Your results map is missing " + key, actual.containsKey(key));
+            Object o1 = expected.get(key);
+            Object o2 = actual.get(key);
+
             if (o1 instanceof Double) {
-                assertTrue(err, Math.abs((Double) o1 - (Double) o2) < DOUBLE_THRESHOLD);
+                assertTrue(genDiffMsg(err, expected, actual), Math.abs((Double) o1 - (Double) o2) < DOUBLE_THRESHOLD);
             } else if (o1 instanceof String[][]) {
-                assertArrayEquals(err, (String[][]) o1, (String[][]) o2);
+                assertArrayEquals(genDiffMsg(err, expected, actual), (String[][]) o1, (String[][]) o2);
             } else {
-                assertEquals(err, o1, o2);
+                assertEquals(genDiffMsg(err, expected, actual), o1, o2);
             }
         }
     }
+
+    /** Generates an actual/expected message from a base message, an actual map,
+     *  and an expected map.
+     */
+    private String genDiffMsg(String basemsg, Map<String, Object> expected, Map<String, Object> actual) {
+        return basemsg + "Expected: " + mapToString(expected) + ", but got\n"
+                       + "Actual  : " + mapToString(actual);
+    }
+
+    /** Converts a Rasterer input or output map to its string representation. */
+    private String mapToString(Map<String, ?> m) {
+        StringJoiner sj = new StringJoiner(", ", "{", "}");
+
+        List<String> keys = new ArrayList<>();
+        keys.addAll(m.keySet());
+        Collections.sort(keys);
+
+        for (String k : keys) {
+
+            StringBuilder sb = new StringBuilder();
+            sb.append(k);
+            sb.append("=");
+            Object v = m.get(k);
+
+            if (v instanceof String[][]) {
+                sb.append(Arrays.deepToString((String[][]) v));
+            } else if (v instanceof Double) {
+                sb.append(df2.format(v));
+            } else {
+                sb.append(v.toString());
+            }
+            String thisEntry = sb.toString();
+
+            sj.add(thisEntry);
+        }
+
+        return sj.toString();
+    }
+
 }
