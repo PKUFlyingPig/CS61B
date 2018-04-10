@@ -1,0 +1,48 @@
+# number indicates number of different directions along path
+# PLEASE DO NOT MODIFY THIS FILE
+20
+Start on Centennial Drive and continue for 0.728 miles.
+Turn left on Stadium Rim Way and continue for 0.085 miles.
+Go straight on Canyon Road and continue for 0.065 miles.
+Turn right on Bancroft Way and continue for 0.023 miles.
+Turn left on Prospect Street and continue for 0.089 miles.
+Turn right on Channing Way and continue for 0.049 miles.
+Turn left on Warring Street and continue for 0.376 miles.
+Turn left on  and continue for 0.021 miles.
+Turn left on Derby Street and continue for 0.209 miles.
+Slight right on Belrose Avenue and continue for 0.123 miles.
+Go straight on Claremont Boulevard and continue for 0.167 miles.
+Slight right on Claremont Avenue and continue for 0.012 miles.
+Turn left on  and continue for 0.023 miles.
+Slight left on Ashby Avenue and continue for 0.057 miles.
+Go straight on Tunnel Road and continue for 0.365 miles.
+Sharp left on Bridge Road and continue for 0.088 miles.
+Turn right on Alvarado Road and continue for 0.186 miles.
+Turn right on Vicente Road and continue for 0.136 miles.
+Turn left on Grand View Drive and continue for 0.349 miles.
+Sharp left on Gravatt Drive and continue for 0.235 miles.
+2
+Start on Rose Street and continue for 0.333 miles.
+Turn left on Acton Street and continue for 0.047 miles.
+2
+Start on Dulwich Road and continue for 0.050 miles.
+Turn left on Harbord Drive and continue for 0.006 miles.
+1
+Start on Claremont Avenue and continue for 0.032 miles.
+2
+Start on Shafter Avenue and continue for 0.108 miles.
+Turn left on 38th Street and continue for 0.056 miles.
+4
+Start on 45th Street and continue for 0.042 miles.
+Turn right on San Pablo Avenue and continue for 0.088 miles.
+Turn left on 43rd Street and continue for 0.007 miles.
+Turn right on San Pablo Avenue and continue for 0.069 miles.
+6
+Start on 66th Street and continue for 0.005 miles.
+Turn left on San Pablo Avenue and continue for 0.054 miles.
+Turn right on 65th Street and continue for 0.007 miles.
+Turn left on San Pablo Avenue and continue for 0.058 miles.
+Turn right on Ocean Avenue and continue for 0.244 miles.
+Turn left on Doyle Street and continue for 0.053 miles.
+1
+Start on Buena Vista Avenue and continue for 0.039 miles.

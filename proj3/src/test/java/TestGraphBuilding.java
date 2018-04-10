@@ -39,7 +39,7 @@ public class TestGraphBuilding {
      *
      * 1. Be sure to only add ways that are valid. (Especially if you have 374535 nodes after clean)
      * 2. Depending on the graph implementation, edges may be directed or undirected. Remember that
-     * all roads are two-way for this project!
+     * all roads are two-way for this project and to add both edges if you're using directed edges.
      */
     @Test
     public void testNodeCount() {
@@ -120,8 +120,8 @@ public class TestGraphBuilding {
     public void testClosest() {
         double lon = -122.2892;
         double lat = 37.8885;
-        assertEquals("Make sure you're using the great circle distance, especially if your actual value is 1790732915",
-                53042711L, graph.closest(lon, lat));
+        assertEquals("Make sure you're using the great circle distance especially if your "
+                + "actual value is 1790732915", 53042711L, graph.closest(lon, lat));
     }
 
     @Test
