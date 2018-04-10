@@ -97,6 +97,50 @@ public class Router {
                     DIRECTIONS[direction], way, distance);
         }
 
+        /**
+         * Takes the string representation of a navigation direction and converts it into
+         * a Navigation Direction object.
+         */
+        public static NavigationDirection fromString(String dirAsString) {
+            String regex = "([a-zA-Z\\s]+) on ([\\w\\s]*) and continue for ([0-9\\.]+) miles\\.";
+            Pattern p = Pattern.compile(regex);
+            Matcher m = p.matcher(dirAsString);
+            NavigationDirection nd = new NavigationDirection();
+            if (m.matches()) {
+                String direction = m.group(1);
+                if (direction.equals("Start")) {
+                    nd.direction = NavigationDirection.START;
+                } else if (direction.equals("Go straight")) {
+                    nd.direction = NavigationDirection.STRAIGHT;
+                } else if (direction.equals("Slight left")) {
+                    nd.direction = NavigationDirection.SLIGHT_LEFT;
+                } else if (direction.equals("Slight right")) {
+                    nd.direction = NavigationDirection.SLIGHT_RIGHT;
+                } else if (direction.equals("Turn right")) {
+                    nd.direction = NavigationDirection.RIGHT;
+                } else if (direction.equals("Turn left")) {
+                    nd.direction = NavigationDirection.LEFT;
+                } else if (direction.equals("Sharp left")) {
+                    nd.direction = NavigationDirection.SHARP_LEFT;
+                } else if (direction.equals("Sharp right")) {
+                    nd.direction = NavigationDirection.SHARP_RIGHT;
+                } else {
+                    return null;
+                }
+
+                nd.way = m.group(2);
+                try {
+                    nd.distance = Double.parseDouble(m.group(3));
+                } catch (NumberFormatException e) {
+                    return null;
+                }
+                return nd;
+            } else {
+                // not a valid nd
+                return null;
+            }
+        }
+
         @Override
         public boolean equals(Object o) {
             if (o instanceof NavigationDirection) {
