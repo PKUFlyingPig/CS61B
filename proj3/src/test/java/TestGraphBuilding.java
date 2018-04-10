@@ -12,6 +12,7 @@ import static org.junit.Assert.assertEquals;
 public class TestGraphBuilding {
     private static GraphDB graph;
     private static GraphDB graphSmall;
+
     private static final String OSM_DB_PATH = "../library-sp18/data/berkeley-2018.osm.xml";
     private static final String OSM_DB_PATH_SMALL =
             "../library-sp18/data/berkeley-2018-small.osm.xml";
@@ -42,7 +43,7 @@ public class TestGraphBuilding {
      * all roads are two-way for this project and to add both edges if you're using directed edges.
      */
     @Test
-    public void testNodeCount() {
+    public void testNodeCountFullGraph() {
         Iterable<Long> ids = graph.vertices();
         int numberOfNodes = countIterableItems(ids);
         assertEquals("Your graph should have 25176 nodes after cleaning. Consider removing the call"
@@ -50,6 +51,9 @@ public class TestGraphBuilding {
                 + "  your results before calling clean.", 25176, numberOfNodes);
     }
 
+    /**
+     * See comments on testNodeCountFullGraph for more tips.
+     */
     @Test
     public void testNodeCountSmall() {
         Iterable<Long> ids = graphSmall.vertices();
@@ -57,7 +61,6 @@ public class TestGraphBuilding {
         assertEquals("Your graph should have 21 nodes after cleaning. Consider removing the call"
                 + " to clean and seeing if you get 250 nodes as expected as a sanity check on"
                 + "  your results before calling clean.", 21, numberOfNodes);
-
     }
 
     @Test
@@ -120,8 +123,9 @@ public class TestGraphBuilding {
     public void testClosest() {
         double lon = -122.2892;
         double lat = 37.8885;
-        assertEquals("Make sure you're using the great circle distance especially if your "
-                + "actual value is 1790732915", 53042711L, graph.closest(lon, lat));
+        assertEquals("Make sure you're using the great circle distance, "
+                + "especially if your actual value is 1790732915",
+                53042711L, graph.closest(lon, lat));
     }
 
     @Test
@@ -131,7 +135,7 @@ public class TestGraphBuilding {
         assertEquals(2252623344L, graphSmall.closest(lon, lat));
     }
 
-    private <Item> int countIterableItems(Iterable<Item> it) {
+    static <Item> int countIterableItems(Iterable<Item> it) {
         int N = 0;
         for (Item x : it) {
             N += 1;

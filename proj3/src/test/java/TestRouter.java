@@ -17,10 +17,15 @@ public class TestRouter {
     private static final int NUM_TESTS = 8;
     private static final String OSM_DB_PATH = "../library-sp18/data/berkeley-2018.osm.xml";
     private static GraphDB graph;
+    private static boolean initialized = false;
 
     @Before
     public void setUp() throws Exception {
+        if (initialized) {
+            return;
+        }
         graph = new GraphDB(OSM_DB_PATH);
+        initialized = true;
     }
 
     @Test
