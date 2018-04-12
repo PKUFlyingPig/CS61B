@@ -87,10 +87,14 @@ public class GraphDB {
      * @return The great-circle distance between the two locations from the graph.
      */
     double distance(long v, long w) {
-        double phi1 = Math.toRadians(lat(v));
-        double phi2 = Math.toRadians(lat(w));
-        double dphi = Math.toRadians(lat(w) - lat(v));
-        double dlambda = Math.toRadians(lon(w) - lon(v));
+        return distance(lon(v), lat(v), lon(w), lat(w));
+    }
+
+    double distance(double lonV, double latV, double lonW, double latW) {
+        double phi1 = Math.toRadians(latV);
+        double phi2 = Math.toRadians(latW);
+        double dphi = Math.toRadians(latW - latV);
+        double dlambda = Math.toRadians(lonW - lonV);
 
         double a = Math.sin(dphi / 2.0) * Math.sin(dphi / 2.0);
         a += Math.cos(phi1) * Math.cos(phi2) * Math.sin(dlambda / 2.0) * Math.sin(dlambda / 2.0);
@@ -110,10 +114,14 @@ public class GraphDB {
      * @return The initial bearing between the vertices.
      */
     double bearing(long v, long w) {
-        double phi1 = Math.toRadians(lat(v));
-        double phi2 = Math.toRadians(lat(w));
-        double lambda1 = Math.toRadians(lon(v));
-        double lambda2 = Math.toRadians(lon(w));
+        return bearing(lon(v), lat(v), lon(w), lat(w));
+    }
+
+    double bearing(double lonV, double latV, double lonW, double latW) {
+        double phi1 = Math.toRadians(latV);
+        double phi2 = Math.toRadians(latW);
+        double lambda1 = Math.toRadians(lonV);
+        double lambda2 = Math.toRadians(lonW);
 
         double y = Math.sin(lambda2 - lambda1) * Math.cos(phi2);
         double x = Math.cos(phi1) * Math.sin(phi2);
