@@ -102,6 +102,8 @@ public class Router {
         /**
          * Takes the string representation of a navigation direction and converts it into
          * a Navigation Direction object.
+         * @param dirAsString The string representation of the NavigationDirection.
+         * @return A NavigationDirection object representing the input string.
          */
         public static NavigationDirection fromString(String dirAsString) {
             String regex = "([a-zA-Z\\s]+) on ([\\w\\s]*) and continue for ([0-9\\.]+) miles\\.";

@@ -135,7 +135,8 @@ public class MapServer {
                     params.get("end_lon"), params.get("end_lat"));
             String directions = getDirectionsText();
             Map<String, Object> routeParams = new HashMap<>();
-            routeParams.put("routing_success", !route.isEmpty() && directions.length() > 0);
+            routeParams.put("routing_success", !route.isEmpty());
+            routeParams.put("directions_success", directions.length() > 0);
             routeParams.put("directions", directions);
             Gson gson = new Gson();
             return gson.toJson(routeParams);
@@ -330,6 +331,9 @@ public class MapServer {
      */
     private static String getDirectionsText() {
         List<Router.NavigationDirection> directions = Router.routeDirections(graph, route);
+        if (directions == null || directions.isEmpty()) {
+          return "";
+        }
         StringBuilder sb = new StringBuilder();
         int step = 1;
         for (Router.NavigationDirection d: directions) {

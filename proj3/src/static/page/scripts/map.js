@@ -174,7 +174,7 @@ $(function() {
             success: function(data) {
                 data = JSON.parse(data);
                 updateImg();
-                if (data.routing_success) {
+                if (data.directions_success) {
                     $directionsText.html(data.directions);
                 } else {
                     $directionsText.html('No routing directions to display.');
