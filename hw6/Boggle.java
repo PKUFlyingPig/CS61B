@@ -3,7 +3,7 @@ import java.util.List;
 public class Boggle {
     
     // File path of dictionary file
-    public static String dictPath = "words.txt";
+    static String dictPath = "words.txt";
 
     /**
      * Solves a Boggle puzzle.
