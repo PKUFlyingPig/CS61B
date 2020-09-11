@@ -10,7 +10,7 @@ public class ArrayDeque<T> {
     private int size;
 
     /** size of the array. */
-    public int length;
+    private int length;
 
     /** front index. */
     private int front;
@@ -134,7 +134,7 @@ public class ArrayDeque<T> {
      * @return the removed last item
      */
     public T removeLast() {
-        if (length >= 16 && size / length <= 0.25){
+        if (length >= 16 && length / size >= 4){
             shrink();
         }
         if (size == 0) {

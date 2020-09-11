@@ -26,7 +26,33 @@ class ArrayDequeTest {
         assertEquals(0, dq.size());
     }
 
+    public ArrayDeque<Integer> create(int[] array){
+        ArrayDeque<Integer> dq = new ArrayDeque<>();
+        for (int x : array) {
+            dq.addLast(x);
+        }
+        return dq;
+    }
+    @Test
+    public static void testgrowshrink(){
+        ArrayDeque<Integer> dq = new ArrayDeque<>();
+        for (int i = 0; i < 16; i++) {
+            dq.addLast(i);
+        }
+        for (int i = -16; i < 0; i++) {
+            dq.addFirst(i);
+        }
+        for (int i = -1; i >= 16; i--) {
+            assertEquals(i, dq.get(i));
+        }
+        for (int i = 0; i < 30; i++) {
+            dq.removeFirst();
+        }
+        assertEquals(2, dq.size());
+        assertEquals(8, dq.length);
+        dq.printDeque();
+    }
     public static void main(String[] args) {
-        testaddsizeempty();
+        testgrowshrink();
     }
 }
