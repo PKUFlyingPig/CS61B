@@ -6,11 +6,11 @@ public class LinkedListDeque<T> {
     /** inner class Node. */
     public class Node {
         /** the item stored on this node. */
-        public T item;
+        private T item;
         /** the Node before this Node. **/
-        public Node pre;
+        private Node pre;
         /** the Node after this Node. **/
-        public Node next;
+        private Node next;
 
         /** constructor for Node. */
         public Node(T n, Node ppre, Node nnext) {

@@ -5,8 +5,8 @@ import org.junit.Test;
 class ArrayDequeTest {
 
     @Test
-    public static void testaddsizeempty(){
-        ArrayDeque<String>dq = new ArrayDeque<>();
+    public static void testaddsizeempty() {
+        ArrayDeque<String> dq = new ArrayDeque<>();
         assertEquals(true, dq.isEmpty());
 
         dq.addFirst("first");
@@ -26,7 +26,7 @@ class ArrayDequeTest {
         assertEquals(0, dq.size());
     }
 
-    public ArrayDeque<Integer> create(int[] array){
+    public ArrayDeque<Integer> create(int[] array) {
         ArrayDeque<Integer> dq = new ArrayDeque<>();
         for (int x : array) {
             dq.addLast(x);
@@ -34,7 +34,7 @@ class ArrayDequeTest {
         return dq;
     }
     @Test
-    public static void testgrowshrink(){
+    public static void testgrowshrink() {
         ArrayDeque<Integer> dq = new ArrayDeque<>();
         for (int i = 0; i < 16; i++) {
             dq.addLast(i);
@@ -49,7 +49,6 @@ class ArrayDequeTest {
             dq.removeFirst();
         }
         assertEquals(2, dq.size());
-        assertEquals(8, dq.length);
         dq.printDeque();
     }
     public static void main(String[] args) {
