@@ -59,10 +59,43 @@ public class ArrayDeque<T> {
         return index + 1;
     }
 
+    private void grow(){
+        T[] newArray = (T[]) new Object[length * 2];
+        int ptr1 = front;
+        int ptr2 = length;
+        while (ptr1 != last){
+            newArray[ptr2] = array[ptr1];
+            ptr1 = plusOne(ptr1);
+            ptr2 = plusOne(ptr2);
+        }
+        front = length;
+        last = ptr2;
+        array = newArray;
+        length *= 2;
+    }
+
+    private void shrink(){
+        T[] newArray = (T[]) new Object[length / 2];
+        int ptr1 = front;
+        int ptr2 = length / 2;
+        while (ptr1 != last){
+            newArray[ptr2] = array[ptr1];
+            ptr1 = plusOne(ptr1);
+            ptr2 = plusOne(ptr2);
+        }
+        front = length / 2;
+        last = ptr2;
+        array = newArray;
+        length /= 2;
+    }
+
     /** add one item at the front of the deque.
      * @param item the item we want to add
      */
     public void addFirst(T item) {
+        if (size == length){
+            grow();
+        }
         front = minusOne(front);
         array[front] = item;
         size++;
@@ -72,6 +105,9 @@ public class ArrayDeque<T> {
      * @param item item we want to add
      */
     public void addLast(T item) {
+        if (size == length){
+            grow();
+        }
         array[last] = item;
         last = plusOne(last);
         size++;
@@ -81,6 +117,9 @@ public class ArrayDeque<T> {
      * @return the removed first item
     */
     public T removeFirst() {
+        if (length >= 16 && size / length <= 0.25){
+            shrink();
+        }
         if (size == 0) {
             return null;
         }
@@ -94,6 +133,9 @@ public class ArrayDeque<T> {
      * @return the removed last item
      */
     public T removeLast() {
+        if (length >= 16 && size / length <= 0.25){
+            shrink();
+        }
         if (size == 0) {
             return null;
         }
