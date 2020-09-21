@@ -2,6 +2,9 @@ package lab9tester;
 
 import static org.junit.Assert.*;
 
+import edu.princeton.cs.algs4.In;
+import java.util.HashSet;
+import java.util.Set;
 import org.junit.Test;
 import lab9.BSTMap;
 
@@ -84,6 +87,49 @@ public class TestBSTMap {
         b.put("hi", 1);
         assertTrue(b.containsKey("hi"));
         assertTrue(b.get("hi") != null);
+    }
+
+    @Test
+    public void sanitySetTest() {
+        Set<Integer> keys = new HashSet<>();
+        BSTMap<Integer, Integer> map = new BSTMap<>();
+        for (int i = 0; i < 4; i++) {
+            keys.add(i);
+            map.put(i, i);
+        }
+        Set<Integer> mapKeys = map.keySet();
+        assertEquals(mapKeys, keys);
+    }
+
+    @Test
+    public void sanityIterator() {
+        BSTMap<String, Integer> map = new BSTMap<>();
+        for (int i = 0; i < 4; i++) {
+            map.put("haha" + i, i);
+        }
+        Set<String> keys = new HashSet<>();
+        for (String k : map) {
+            keys.add(k);
+        }
+        assertEquals(keys, map.keySet());
+    }
+
+    @Test
+    public void sanityRemove() {
+        BSTMap<Integer, Integer> map = new BSTMap<>();
+        map.put(5, 1);
+        map.put(3, 2);
+        map.put(8, 3);
+        map.put(1, 4);
+        map.put(4, 5);
+        map.put(6, 6);
+        assertEquals(new Integer(1), map.remove(5));
+        assertEquals(5, map.size());
+        assertEquals(new Integer(2), map.remove(3));
+        assertEquals(4, map.size());
+        assertEquals(new Integer(3), map.remove(8));
+        assertEquals(3, map.size());
+        assertNull(map.remove(12));
     }
 
     public static void main(String[] args) {
