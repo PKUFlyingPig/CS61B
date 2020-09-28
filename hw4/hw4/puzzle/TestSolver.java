@@ -62,7 +62,6 @@ public class TestSolver {
         }
     }
 
-/* Uncomment once you've written Solver.
     @Test(timeout = 10000)
     public void testWordPuzzles() {
         In in = new In("input/word_puzzles.txt");
@@ -79,9 +78,7 @@ public class TestSolver {
             assertEquals(errorMessage, wps.numMoves, s.moves());
         }
     }
- */
 
- /* Uncomment everything in this block once you've written Board.
      public static Board readBoard(String filename) {
         In in = new In(filename);
         int N = in.readInt();
@@ -118,8 +115,10 @@ public class TestSolver {
             BoardPuzzleSolution bps = new BoardPuzzleSolution(puzzleName, b, numMoves);
             Solver s = new Solver(b);
             assertEquals("Wrong number of moves on " + puzzleName, bps.numMoves, s.moves());
+            System.out.println("puzzle " + i + " solved !");
         }
     }
+
 
     @Test(timeout = 20000)
     public void test4x4BoardPuzzles() {
@@ -145,5 +144,16 @@ public class TestSolver {
             Solver s = new Solver(b);
             assertEquals("Wrong number of moves on " + puzzleName, bps.numMoves, s.moves());
         }
-    }*/
+    }
+
+    @Test(timeout = 10000)
+    public void testManhattan() {
+        int[][] b = new int[2][2];
+        b[0][0] = 2;
+        b[0][1] = 0;
+        b[1][0] = 1;
+        b[1][1] = 3;
+        Board bd = new Board(b);
+        assertEquals(3, bd.estimatedDistanceToGoal());
+    }
 }

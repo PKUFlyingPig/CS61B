@@ -7,7 +7,7 @@ public class Board implements WorldState{
 
     private final int[][] tiles;
     private static final int BLANK = 0;
-    int N;
+    private int N;
     private int estimatedDist;
     /** Constructs a board from an N-by-N array of tiles where
      * tiles[i][j] = tile at row i, column j.
@@ -80,10 +80,8 @@ public class Board implements WorldState{
         int dist = 0;
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if (i == N - 1 && j == N - 1) {
-                    if (tiles[i][j] != 0) {
-                        dist++;
-                    }
+                if (tiles[i][j] == 0) {
+                    continue;
                 } else if (tiles[i][j] != i * N + j + 1) {
                     dist++;
                 }
@@ -124,15 +122,29 @@ public class Board implements WorldState{
     /** Returns true if this board's tile values are the same
      position as y's.
      */
+    @Override
     public boolean equals(Object y) {
         if (y == this) return true;
         if (y == null || this.getClass() != y.getClass()) {
             return false;
         }
         Board other = (Board) y;
-        return Arrays.equals(this.tiles, other.tiles);
+        if (this.N != other.N) return false;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (this.tiles[i][j] != other.tiles[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+    
     /** Returns the string representation of the board. */
     public String toString() {
         StringBuilder s = new StringBuilder();
